@@ -1,0 +1,1 @@
+Blog post for ResumeAI SA — AI resume builder for South African job seekers
