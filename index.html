@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>ResumeAI SA — AI Resume Builder</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.6; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(10,10,10,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  .logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; color: #999; }
+  .nav-links a:hover { color: #fff; }
+  .btn-primary { background: var(--accent); color: #000; padding: 12px 28px; border-radius: 10px; font-weight: 700; font-size: 15px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 25px var(--accent-glow); }
+  .btn-outline { background: transparent; color: #fff; padding: 12px 28px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid rgba(255,255,255,0.15); cursor: pointer; transition: all 0.2s; }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.03); }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; transition: border-color 0.3s; }
+  .card:hover { border-color: var(--accent); }
+  .section { padding: 100px 0; }
+  .text-center { text-align: center; }
+  .gradient { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .badge { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; background: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border); }
+  footer { border-top: 1px solid rgba(255,255,255,0.06); padding: 40px 0; text-align: center; color: #666; font-size: 13px; }
+  .subscribe-section { padding: 60px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.06); }
+  .subscribe-form { display: flex; gap: 8px; max-width: 420px; margin: 0 auto; }
+  .subscribe-form input { flex: 1; padding: 14px 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; font-size: 15px; }
+  .subscribe-msg { font-size: 12px; color: #22c55e; margin-top: 10px; display: none; }
+  @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr !important; } .hero h1 { font-size: 32px !important; } .nav-links { display: none; } .subscribe-form { flex-direction: column; } }
+:root{--accent:#10b981;--accent2:#06b6d4;--accent-glow:rgba(16,185,129,0.3);--accent-bg:rgba(16,185,129,0.1);--accent-border:rgba(16,185,129,0.2);}</style></head><body>
+  <nav><div class="container nav-inner"><div class="logo" style="color:#10b981">Resume<span style="color:#fff">AI</span> SA</div><div class="nav-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><button class="btn-primary" style="padding:8px 18px;font-size:13px">Get Started</button></div></div></nav>
+  <section class="hero section" style="padding-top:160px"><div class="container text-center">
+    <div class="badge" style="margin-bottom:24px">Trusted by 500+ SA job seekers</div>
+    <h1 style="font-size:52px;font-weight:800;line-height:1.1;margin-bottom:20px">Build a Professional<br><span class="gradient">Resume</span> in Minutes</h1>
+    <p style="font-size:18px;color:#888;max-width:500px;margin:0 auto 36px">AI-powered resume builder optimised for South African jobs. ATS-friendly templates, instant PDF download, ZAR pricing.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn-primary" style="font-size:16px;padding:14px 32px">Create Your Resume — R49</button>
+      <button class="btn-outline">See Templates</button>
+    </div>
+    <p style="font-size:12px;color:#666;margin-top:12px">No credit card required for preview</p>
+  </div></section>
+  <section class="section" style="background:rgba(255,255,255,0.02)"><div class="container">
+    <div class="grid grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="card"><div style="font-size:32px;margin-bottom:16px">🤖</div><h3 style="font-size:17px;font-weight:700;margin-bottom:8px">AI-Written Content</h3><p style="font-size:14px;color:#888">Our AI writes compelling, ATS-optimised bullet points tailored to your experience and target role.</p></div>
+      <div class="card"><div style="font-size:32px;margin-bottom:16px">🇿🇦</div><h3 style="font-size:17px;font-weight:700;margin-bottom:8px">Built for South Africa</h3><p style="font-size:14px;color:#888">Templates designed for SA employers. Local formatting, ZAR pricing, and market insights.</p></div>
+      <div class="card"><div style="font-size:32px;margin-bottom:16px">📄</div><h3 style="font-size:17px;font-weight:700;margin-bottom:8px">Instant PDF Download</h3><p style="font-size:14px;color:#888">Download your polished, professional resume as a high-quality PDF in seconds.</p></div>
+    </div>
+  </div></section>
+  <section class="section" id="features"><div class="container text-center">
+    <div class="badge" style="margin-bottom:20px">How It Works</div>
+    <h2 style="font-size:36px;font-weight:800;margin-bottom:48px">Three steps to your new resume</h2>
+    <div class="grid grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+      <div style="padding:24px"><div style="width:48px;height:48px;border-radius:50%;background:rgba(16,185,129,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:800;color:#10b981">1</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Fill in your details</h3><p style="font-size:13px;color:#888">Answer a few questions about your experience, skills, and career goals.</p></div>
+      <div style="padding:24px"><div style="width:48px;height:48px;border-radius:50%;background:rgba(16,185,129,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:800;color:#10b981">2</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px">AI writes your resume</h3><p style="font-size:13px;color:#888">Our AI generates professional, ATS-optimised content in seconds.</p></div>
+      <div style="padding:24px"><div style="width:48px;height:48px;border-radius:50%;background:rgba(16,185,129,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:800;color:#10b981">3</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Download your PDF</h3><p style="font-size:13px;color:#888">Get a polished, professional resume ready to send to employers.</p></div>
+    </div>
+  </div></section>
+  <section class="section" id="pricing" style="background:rgba(255,255,255,0.02)"><div class="container text-center">
+    <h2 style="font-size:36px;font-weight:800;margin-bottom:48px">Simple, honest pricing</h2>
+    <div class="card" style="max-width:400px;margin:0 auto"><div style="font-size:56px;font-weight:800;margin-bottom:4px">R49</div><div style="color:#888;margin-bottom:28px">per resume · one-time</div>
+      <ul style="list-style:none;text-align:left;max-width:260px;margin:0 auto 28px"><li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px">✓ AI-generated content</li><li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px">✓ 5 ATS-friendly templates</li><li style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px">✓ Instant PDF download</li><li style="padding:10px 0;font-size:14px">✓ Cover letter included</li></ul>
+      <button class="btn-primary" style="width:100%">Get Started</button>
+    </div>
+  </div></section>
+  <section class="subscribe-section" id="subscribe"><div class="container">
+    <h2 style="font-size:24px;font-weight:800;margin-bottom:12px">Get Free Resume Tips</h2>
+    <p style="color:#888;margin-bottom:24px;font-size:14px">Weekly tips, templates, and career advice for SA job seekers.</p>
+    <form class="subscribe-form" onsubmit="fetch('https://posh-rabbit-536.convex.site/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:this.email.value,businessId:'resume',name:this.email.value.split('@')[0]})}).then(()=>{this.reset();document.getElementById('sub-msg').style.display='block'})">
+      <input type="email" name="email" placeholder="you@email.com" required>
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+    <p id="sub-msg" class="subscribe-msg">✓ Subscribed! Check your inbox.</p>
+  </div></section>
+  <footer><div class="container">© 2026 ResumeAI SA. All rights reserved. Built with ❤️ in South Africa.</div></footer>
+</body></html>
